@@ -69,4 +69,14 @@ extension Double {
     var msec:Double {
         return self * Double(NSEC_PER_MSEC)
     }
+    
+    var s:Double {
+        return self * Double(NSEC_PER_SEC)
+    }
+    
+    var ms:Double {
+        return self * Double(NSEC_PER_MSEC)
+    }
+    
+    
 }
