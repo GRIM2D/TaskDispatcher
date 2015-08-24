@@ -36,6 +36,9 @@ class TaskDispatcher {
         return m_tasks.contains(task)
     }
     
+    func purge() {
+        m_tasks.removeAll()
+    }
 }
 
 class DispatchTask:NSObject {
@@ -77,6 +80,4 @@ extension Double {
     var ms:Double {
         return self * Double(NSEC_PER_MSEC)
     }
-    
-    
 }
