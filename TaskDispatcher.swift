@@ -6,8 +6,6 @@
 //
 
 
-
-
 import Foundation
 
 /**
@@ -93,10 +91,10 @@ extension Double {
     }
     
     var s:Double {
-        return self * Double(NSEC_PER_SEC)
+        return self.sec
     }
     
     var ms:Double {
-        return self * Double(NSEC_PER_MSEC)
+        return self.msec
     }
 }
